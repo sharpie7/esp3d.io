@@ -25,6 +25,7 @@ You could also use 10k and 22k or anything near a factor 2.
 
 ![step1](/images/dividerbridge.png?width=300px)
 
+__NOTE__ : Some ESP boards have the Rx pin of the MCU connected to the Tx output of an USB->UART IC via a low-value resistor (e.g. the Wemos/LOLIN D1 mini). In this case a simple resistor voltage divider may not provide sufficient drive to the MCU's Rx pin to overcome the pull from the UART IC. An active level shifter may be needed in this case.
 
 ### Connection diagrams for some printers and ESP boards
 
